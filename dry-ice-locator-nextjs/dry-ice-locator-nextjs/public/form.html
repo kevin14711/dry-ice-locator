@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submit a Listing – Dry Ice Locator</title>
+    <link rel="stylesheet" href="/styles/globals.css" />
+  </head>
+  <body>
+    <header class="wrap head">
+      <div class="brand"><span class="logo"></span><h1>Submit a Listing</h1></div>
+      <div class="head-actions"><a href="/">Back to Directory</a></div>
+    </header>
+    <p class="wrap sub">Use this form to propose a new dry ice supplier. We review and verify before publishing.</p>
+    <section class="wrap controls">
+      <form method="POST" action="https://formspree.io/f/your-id">
+        <div class="grid">
+          <input class="input" name="Business Name" placeholder="Business Name" required />
+          <input class="input" name="Address" placeholder="Address" />
+          <input class="input" name="City" placeholder="City" />
+          <input class="input" name="State" placeholder="State (e.g., IL)" />
+          <input class="input" name="Zip" placeholder="Zip" />
+          <input class="input" name="Phone" placeholder="Phone" />
+          <input class="input" name="Website" placeholder="Website URL" />
+          <select class="input" name="Supplier Type">
+            <option>Grocery</option><option>Welding Supply</option><option>Gas Supplier</option>
+            <option>Party Store</option><option>Industrial</option><option>Pharmacy</option>
+            <option>Specialty Ice</option><option>Catering Supply</option><option>Other</option>
+          </select>
+          <input class="input" name="Dry Ice Form" placeholder="Forms (e.g., Blocks, Pellets)" />
+          <input class="input" name="Min Order (lbs)" placeholder="Min Order (lbs)" />
+          <input class="input" name="Price per lb" placeholder="Price per lb" />
+          <input class="input" name="Hours" placeholder="Hours" />
+          <input class="input" name="Notes" placeholder="Notes (delivery, seasonal, etc.)" />
+        </div>
+        <div class="actions" style="margin-top:14px">
+          <button class="primary" type="submit">Submit</button>
+          <a class="link" href="mailto:you@example.com?subject=Dry Ice Listing Submission">Or email details</a>
+        </div>
+        <p class="note">Tip: Replace the Formspree URL with your own handler or Netlify Forms.</p>
+      </form>
+    </section>
+  </body>
+</html>
